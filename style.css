@@ -1,0 +1,150 @@
+:root {
+    --style-color: #9e2c2c;
+    --text-color: #2E2324;
+    --background-color: #faf6ed;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inverted {
+    flex-direction: row-reverse;
+}
+
+.divider {
+    padding: 0;
+    margin: 25px auto;
+    border: 1px solid grey;
+}
+
+.short {
+    width: 50%;
+}
+
+.long {
+    width: 75%;
+}
+
+header {
+    padding: 5px 25px;
+    min-height: 4em;
+    border-bottom: 2px solid #b6b1b1 ;
+}
+
+.icon-container {
+    cursor: pointer;
+}
+
+#icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.sub-title {
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #9e2c2c;
+    border-radius: 3px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--style-color);
+}
+
+.nav-link {
+    padding-left: 5px;
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+#info {
+    background-image: url(resources/bugs.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #b6b1b1;
+}
+
+#info-text {
+    background-color: var(--style-color);
+    width: auto;
+    padding: 100px;
+    margin: 0 auto;
+    color: var(--background-color);
+    text-align: center;
+    border-bottom: 2px solid #b6b1b1;
+    border-top: 2px solid #b6b1b1;
+    vertical-align: middle;
+}
+
+.info-container {
+    margin: 50px 150px;
+    justify-content: space-between;
+
+}
+
+.info-image {
+    width: 50%;
+    margin: 0 100px 0 0;
+}
+
+.info-image-reversed {
+    width: 50%;
+    margin: 0 0 0 100px;
+}
+
+footer {
+    background-color: #2E2324;
+    color: #fff;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    width: 1000px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+#contact {
+    width: 500px;
+}
+
+.contact-box img {
+    width: 26px;
+    color: white;
+}
+
+
+
+
+

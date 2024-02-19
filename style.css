@@ -4,6 +4,7 @@
     --white: #faf6ed;
 }
 
+
 body {
     font-family: 'Noto Sans HK', sans-serif;
     background-color: var(--white);
@@ -65,7 +66,7 @@ a:hover {
 
 /** navegacion oculta */
 .classes {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -140,4 +141,72 @@ footer p {
     width: 26px;
     margin: 0 10px 10px 10px;
     color: var(--white);
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+    .options {
+        display: none;
+    }
+
+    .classes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .nav-link {
+        margin-left: 20px;
+    }
+
+    .nav-link:last-of-type {
+        margin-bottom: 5px;
+    }
+
+    .info-image {
+        display: block;
+        width: 500px;
+        height: 250px;
+    }
+
+    #services {
+        max-width: 1250px;
+        margin: auto;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .inverted{
+        flex-direction: row-reverse;
+    }
+
+    .text-container {
+        margin-left: 40px;
+    }
+
+    .text-container p, .text-container h2{
+        text-align: left;
+    }
+
+    .inverted .text-container {
+        margin-right: 40px;
+    }
+
+    .inverted p, .inverted h2{
+        flex-direction: row-reverse;
+        text-align: right;
+    }
 }

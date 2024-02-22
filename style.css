@@ -14,11 +14,14 @@ body {
 header {
     padding: 10px 10px;
     height: auto;
-    border-bottom: 2px solid var(--dark-green);
+    /*border-bottom: 2px solid var(--dark-green);*/
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 5px 1px black;
     /*position: fixed;
     top: 0;
     width: 100%;*/
@@ -87,28 +90,30 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid var(--dark-green);
 }
 
 #info-text {
-    background-color: var(--light-green);
+    background-color: var(--dark-green);
     width: 100%;
     box-sizing: border-box;
-    padding: 30px 15px;
+    padding: 100px 15px;
     margin: 0 auto;
     color: var(--white);
     text-align: center;
-    border-bottom: 2px solid #b6b1b1;
-    border-top: 2px solid #b6b1b1;
+}
+
+#services {
+    box-shadow: 0 0 5px 1px black;
+    position: relative;
 }
 
 .info-container {
-    margin: 50px 75px;
+    padding: 50px 75px;
     justify-content: space-between;
 }
 
@@ -128,6 +133,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 footer p {
@@ -179,12 +185,8 @@ footer p {
         height: 250px;
     }
 
-    #services {
-        max-width: 1250px;
-        margin: auto;
-    }
-
     .info-container {
+        margin: auto;
         display: flex;
         flex-direction: row;
     }

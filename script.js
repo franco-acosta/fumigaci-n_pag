@@ -9,3 +9,17 @@ optionButton.addEventListener('click', function() {
         options.style.display = 'none';
     }
 })
+
+function iniciarMap(){
+    let coord = {lat: -34.646202, lng: -58.486498};
+    let map = new google.maps.Map(document.getElementById('map'),{
+        zoom: 10,
+        center: coord
+    });
+    let marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    })
+}
+
+iniciarMap();

@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    padding: 10px 10px;
+    padding: 0 30px;
     height: auto;
     /*border-bottom: 2px solid var(--dark-green);*/
     background-color: var(--white);
@@ -90,21 +90,27 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 50px 0;
 }
 
 #info-text {
-    background-color: var(--dark-green);
+    background-color: rgba(37, 46, 35, 0.9);
     width: 100%;
     box-sizing: border-box;
-    padding: 100px 15px;
+    padding: 75px 30px;
     margin: 0 auto;
     color: var(--white);
     text-align: center;
+}
+
+#map {
+    margin: 100px 0;
+    height: 500px;
+    width: 100%;
 }
 
 #services {
